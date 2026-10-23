@@ -2,7 +2,7 @@
 
 Replication code and results for the manuscript of the same title (single author; submitted to the *Journal of Financial Stability*, October 2026).
 
-**Version DOI:** to be minted by Zenodo for release v3.3-submission · **Concept DOI:** https://doi.org/10.5281/zenodo.23584408
+**Version DOI:** https://doi.org/10.5281/zenodo.23600761 · **Concept DOI:** https://doi.org/10.5281/zenodo.23584408
 
 **Releases.** `v3.0-results` is the commit whose code produced every estimate in the manuscript. `v3.3-submission` is the archived snapshot deposited on Zenodo; it differs from `v3.0-results` in the table generator (`code/make_tables_v3.py`: the two definitions tables, the longtable form of the largest-differences table, column widths that fit the text block, and the removal of two loads of files it never used), the generated tables, this README, `.zenodo.json`, and two scripts that v3.0–v3.2 omitted although the generator reads their output: `code/reit_historical_v2.py` (BREIT monthly repurchase disclosures → `results/reit_history_v2.json`) and `code/reit_history_v3_build.py` (→ `results/reit_history_v3.json`, verified identical to the file the manuscript's tables were generated from). No estimate changed between the tags. `v3.2-submission` (DOI 10.5281/zenodo.23597022) is the snapshot cited in the submitted manuscript; `v3.1-submission` (DOI 10.5281/zenodo.23584409) differs from it only in table layout. Repository: https://github.com/jihwanw/redemption-queues-private-credit.
 
@@ -37,4 +37,4 @@ All inputs are public filings on SEC EDGAR. No proprietary data are used. The re
 
 ## Citation
 
-Woo, J. (2026). Redemption Queues behind Quarterly Gates: Requests, Rationing, and Balance-Sheet Adjustment in Semi-Liquid Private Credit Funds, 2023–2026 — replication code and results (release v3.3-submission). Zenodo. DOI to be minted for this release.
+Woo, J. (2026). Redemption Queues behind Quarterly Gates: Requests, Rationing, and Balance-Sheet Adjustment in Semi-Liquid Private Credit Funds, 2023–2026 — replication code and results (release v3.3-submission). Zenodo. https://doi.org/10.5281/zenodo.23600761
