@@ -4,7 +4,7 @@ from pathlib import Path
 from decimal import Decimal, ROUND_HALF_UP
 BASE = Path(__file__).resolve().parent.parent; R = BASE / "results"; OUT = BASE / "paper" / "tex" / "tables_v3"; OUT.mkdir(exist_ok=True)
 J = lambda p: json.load(open(R / p))
-M = J("offer_master_v3.json")["offers"]; A = J("m2_analysis_v3.json"); G = J("m2_regressions_v3.json"); BS = J("balance_sheet_summary_v3.json")["rows"]; RE = J("reit_history_v3.json"); R1 = J("m2_revision_results.json"); R2 = J("m2_revision2_results.json")
+M = J("offer_master_v3.json")["offers"]; A = J("m2_analysis_v3.json"); G = J("m2_regressions_v3.json"); BS = J("balance_sheet_summary_v3.json")["rows"]; RE = J("reit_history_v3.json")   # the two JFSR-era revision-results files were loaded here but never used; removed 2026-10-24
 def r(x, d=1): return "" if x is None else str(Decimal(str(x)).quantize(Decimal(1).scaleb(-d), rounding=ROUND_HALF_UP)) if d else f"{int(Decimal(str(x)).quantize(Decimal(1), rounding=ROUND_HALF_UP)):,}"
 def c(x): return "" if x is None else f"{x:,.0f}"
 def w(name, body, cols=None):

@@ -1,8 +1,9 @@
 {
  "meta": {
-  "built": "2026-10-16",
+  "built": "2026-10-24",
+  "rebuilt_from": "reit_history_v2.json (run_at 2026-08-07T10:56:10.188445)",
   "source": "BREIT 424B3/10-Q/10-K 'For the months ended' disclosures (v2 evidence sentences) + 2022-12-15 424B3 for October 2022",
-  "method": "requests %NAV = fulfilled %NAV \u00f7 (fulfilled % of requests / 100). Inputs are disclosed rounded (fulfilled %NAV to 0.1 pp; fulfilled % of requests to 1 pp); the interval uses the half-unit bounds of both inputs."
+  "method": "requests %NAV = fulfilled %NAV ÷ (fulfilled % of requests / 100). Inputs are disclosed rounded (fulfilled %NAV to 0.1 pp; fulfilled % of requests to 1 pp); the interval uses the half-unit bounds of both inputs."
  },
  "monthly": {
   "2022-10": {
