@@ -216,21 +216,27 @@ DEFS = [
   "XBRL companyfacts (SEC); Yahoo Finance closes; Section~\\ref{sec:data}", "Table~\\ref{tab:discounts}; Figure~\\ref{fig:twins}; equation~(\\ref{eq:specA})"),
  ("D12", "Matched group and mark", "Lines of two vehicles with the same issuer, spread, rate, lien seniority and facility type; mark $=$ fair value $\\div$ tagged principal (equation~\\ref{eq:mark}).",
   "The unit on which a non-traded fund's and its listed twin's valuations of the same loans are compared. Operationally the pooled schedule-of-investments lines of one vehicle sharing issuer key, spread, interest rate, lien seniority and facility type (dollar-denominated only); mark $m_g=\\sum\\mathrm{FV}/\\sum\\mathrm{Prin}$; difference in basis points of principal, weighted by the fund's fair value.",
-  "Inline-XBRL schedules of investments (US-GAAP \\texttt{InvestmentOwned*} elements); author rule, Appendix~\\ref{app:soi}", "Table~\\ref{tab:marks}; Tables~\\ref{tab:marks_quarterly}, \\ref{tab:marks_largest}; equation~(\\ref{eq:mark})"),
+  "Inline-XBRL schedules of investments (US-GAAP \\texttt{Investment\\allowbreak Owned*} elements); author rule, Appendix~\\ref{app:soi}", "Table~\\ref{tab:marks}; Tables~\\ref{tab:marks_quarterly}, \\ref{tab:marks_largest}; equation~(\\ref{eq:mark})"),
  ("D13", "Non-accrual share", "The filer's own statement of investments on non-accrual as a percent of its portfolio at fair value (basis as stated).",
   "The share of a vehicle's investments on which it has stopped accruing income. Operationally the figure the filing itself states, on the filer's own denominator and basis (fair value preferred; cost or a count where that is all the filing gives), bound to the report date by the nearest ``as of'' clause.",
   "10-Q/10-K text; Appendix~\\ref{app:soi}", "Table~\\ref{tab:marks}; Section~\\ref{sec:marks}"),
  ("D14", "Balance-sheet flows relative to net assets", "Quarterly cash-flow items (repurchases paid, issuance, purchases and dispositions of investments) de-cumulated from year-to-date XBRL facts, divided by net assets.",
-  "What the fund paid out, took in and invested in a quarter, scaled by its size. Operationally US-GAAP cash-flow elements (e.g.\\ \\texttt{PaymentsForRepurchaseOfCommonStock}, \\texttt{PaymentsToAcquireInvestments}) from 10-Q/10-K XBRL, quarterly values as differences of year-to-date amounts, divided by net assets; dispositions and repayments are reported together by the filers.",
+  "What the fund paid out, took in and invested in a quarter, scaled by its size. Operationally US-GAAP cash-flow elements (e.g.\\ \\texttt{Payments\\allowbreak For\\allowbreak Repurchase\\allowbreak Of\\allowbreak Common\\allowbreak Stock}, \\texttt{Payments\\allowbreak To\\allowbreak Acquire\\allowbreak Investments}) from 10-Q/10-K XBRL, quarterly values as differences of year-to-date amounts, divided by net assets; dispositions and repayments are reported together by the filers.",
   "XBRL companyfacts (SEC); Section~\\ref{sec:data}", "Table~\\ref{tab:balance}; Section~\\ref{sec:balance}"),
 ]
-_short = ["\\begin{tabular}{p{0.7cm}p{4.1cm}p{7.4cm}p{3.6cm}}\\toprule", "No. & Term & Definition & Applied in \\\\ \\midrule"]
-_full = ["\\begin{longtable}{p{0.7cm}p{3.2cm}p{7.8cm}p{3.0cm}p{2.3cm}}", "\\caption{Definitions of the measures used in this paper (full form)}\\label{tab:defs_full}\\\\", "\\toprule No. & Term & Conceptual and operational definition & Source & Applied in \\\\ \\midrule \\endfirsthead",
+# Column widths are fractions of \\linewidth less the column padding, and the fractions sum to one, so each table is exactly
+# as wide as the text block in whatever class and margins the manuscript uses (hard-coded centimetre widths overflowed by 28pt and 74pt).
+def _cols(fracs):
+    return "".join(f">{{\\raggedright\\arraybackslash}}p{{\\dimexpr {f:.3f}\\linewidth-2\\tabcolsep\\relax}}" for f in fracs)   # ragged right: narrow justified columns stretch word spaces
+assert abs(sum([0.065, 0.240, 0.480, 0.215]) - 1) < 1e-9 and abs(sum([0.065, 0.180, 0.430, 0.185, 0.140]) - 1) < 1e-9
+_short = ["\\begin{tabular}{" + _cols([0.065, 0.240, 0.480, 0.215]) + "}\\toprule", "No. & Term & Definition & Applied in \\\\ \\midrule"]
+_full = ["\\begin{longtable}{" + _cols([0.065, 0.180, 0.430, 0.185, 0.140]) + "}", "\\caption{Definitions of the measures used in this paper (full form)}\\label{tab:defs_full}\\\\", "\\toprule No. & Term & Conceptual and operational definition & Source & Applied in \\\\ \\midrule \\endfirsthead",
          "\\multicolumn{5}{l}{\\footnotesize Table~\\thetable\\ (continued)}\\\\ \\toprule No. & Term & Conceptual and operational definition & Source & Applied in \\\\ \\midrule \\endhead",
          "\\midrule\\multicolumn{5}{r}{\\footnotesize continued on next page}\\\\ \\endfoot", "\\bottomrule \\endlastfoot"]
+_brk = lambda s: s.replace("~", " ")   # the Source and Applied-in columns are narrow: let "equation (3.1)" and "Section 3.2" break at the space
 for d in DEFS:
-    _short.append(f"{d[0]} & {d[1]} & {d[2]} & {d[5]} \\\\ \\addlinespace[1pt]")
-    _full.append(f"{d[0]} & {d[1]} & {d[3]} & {d[4]} & {d[5]} \\\\ \\addlinespace[2pt]")
+    _short.append(f"{d[0]} & {d[1]} & {d[2]} & {_brk(d[5])} \\\\ \\addlinespace[1pt]")
+    _full.append(f"{d[0]} & {d[1]} & {d[3]} & {_brk(d[4])} & {_brk(d[5])} \\\\ \\addlinespace[2pt]")
 _short.append("\\bottomrule\\end{tabular}"); _full.append("\\end{longtable}")
 (OUT / "defs_short.tex").write_text("\n".join(_short) + "\n"); (OUT / "defs_full.tex").write_text("\n".join(_full) + "\n")
 nums["NDefs"] = str(len(DEFS))
@@ -271,10 +277,23 @@ for pr in MAIN_PAIRS:
     nums[f"MarkWorstQ{pr.split('-')[0]}"] = d[:7]
     for k in x["largest_abs_diffs"][:3]:
         if not (0.02 <= k["mark_fund"] <= 1.5 and 0.02 <= k["mark_twin"] <= 1.5): continue
-        lab = (k.get("issuer_label") or k["ids_fund"][0].split("|")[0]).strip()[:46].replace("&", "\\&")
+        lab = (k.get("issuer_label") or k["ids_fund"][0].split("|")[0]).strip().replace("&", "\\&")   # full label as tagged (an earlier 46-character cut split words)
         fac = " / ".join(x for x in (k.get("seniority"), k.get("facility")) if x) or "n/a"
         lr.append(f"{pr.replace('-', '--')} & {d[:7]} & {lab} & {fac} & {r(100*k['mark_fund'],1)} & {r(100*k['mark_twin'],1)} & {r(k['diff_bp'],0)} & {r(k['fv_fund']/1e6,1)} & {r(k['fv_twin']/1e6,1)} \\\\")
 w("marks_largest", "\\begin{tabular}{ll>{\\raggedright\\arraybackslash}p{4.3cm}>{\\raggedright\\arraybackslash}p{3.1cm}rrrrr}\\toprule\n" + " & ".join(["Fund--twin", "Quarter", "Issuer (as tagged by the fund)", "Seniority / facility", H("Fund mark|(\\% of par)"), H("Twin mark|(\\% of par)"), H("Difference|(bp)"), H("Fund|position|(\\$m, FV)"), H("Twin|position|(\\$m, FV)")]) + " \\\\ \\midrule\n" + "\n".join(lr) + "\n\\bottomrule\\end{tabular}")
+# The manuscript sets the same rows as a longtable on a rotated page: as a rotated float the 21 rows (526pt) plus caption and note
+# exceed the 469.75pt text width; the standalone PDF above stays in the replication package.
+_hdr = " & ".join(["Fund--twin", "Quarter", "Issuer (as tagged by the fund)", "Seniority / facility", H("Fund mark|(\\% of par)"), H("Twin mark|(\\% of par)"), H("Difference|(bp)"), H("Fund|position|(\\$m, FV)"), H("Twin|position|(\\$m, FV)")])
+# Measured at footnotesize/12pt: natural widths of the l and r columns sum to 329.0pt (GCRED--GBDC 71.7, Quarter 34.5, five numeric
+# headers 222.9); "first lien / delayed draw" is 105.1pt; with \tabcolsep=3pt (set by the manuscript wrapper) the eight inner gaps take 48pt;
+# the issuer column receives the rest of the line (164.4pt on the 647.5pt landscape block), which keeps 15 of the 21 labels on one line.
+(OUT / "T_marks_largest_long.tex").write_text(
+    "\\begin{longtable}{@{}ll>{\\raggedright\\arraybackslash}p{\\dimexpr\\linewidth-483.1pt\\relax}>{\\raggedright\\arraybackslash}p{106pt}rrrrr@{}}\n"
+    "\\caption{Largest mark differences on matched groups, three per pair}\\label{tab:marks_largest}\\\\\n"
+    "\\toprule " + _hdr + " \\\\ \\midrule \\endfirsthead\n"
+    "\\multicolumn{9}{@{}l}{\\footnotesize Table~\\thetable\\ (continued)}\\\\ \\toprule " + _hdr + " \\\\ \\midrule \\endhead\n"
+    "\\midrule\\multicolumn{9}{r@{}}{\\footnotesize continued on next page}\\\\ \\endfoot\n"
+    "\\bottomrule \\endlastfoot\n" + "\n".join(lr) + "\n\\end{longtable}\n")
 # macros
 import statistics
 latest = {pr: max(SOI[pr]) for pr in MAIN_PAIRS}
