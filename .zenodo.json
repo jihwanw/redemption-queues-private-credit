@@ -1,0 +1,23 @@
+{
+ "title": "Redemption Queues behind Quarterly Gates: Requests, Rationing, and Balance-Sheet Adjustment in Semi-Liquid Private Credit Funds, 2023\u20132026 \u2014 replication code and results",
+ "upload_type": "software",
+ "description": "Code, results files and generated tables for the manuscript of the same title. All inputs are public SEC EDGAR filings (Schedule TO-I/A, 8-K, 10-Q, 10-K). Every table and every number in the manuscript is generated from the results JSON files in this repository by code/make_tables_v3.py; the results are produced from the filings by the scripts in code/ (see README.md for the order). The pre-registration of the next-cycle tests, frozen on 22 October 2026 before any of those filings existed, is in preregistration/.",
+ "creators": [
+  {
+   "name": "Woo, Jihwan",
+   "affiliation": "Amazon Web Services, Seoul, Republic of Korea",
+   "orcid": "0000-0002-0424-0242"
+  }
+ ],
+ "license": "MIT",
+ "keywords": [
+  "private credit",
+  "business development companies",
+  "tender offers",
+  "redemption gates",
+  "runs",
+  "liquidity transformation",
+  "SEC EDGAR"
+ ],
+ "access_right": "open"
+}

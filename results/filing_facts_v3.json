@@ -1,0 +1,104 @@
+{
+ "HLEND_8K_20260727": {
+  "source": "HLEND Form 8-K filed 2026-07-27",
+  "cox_price": 18.4,
+  "cox_shares": 550000,
+  "nav_may31": 24.53,
+  "nav_jun30": 24.42,
+  "discount_pct_stated": 25,
+  "share_of_outstanding_pct": 0.1,
+  "evidence": [
+   "The Cox Capital Offer proposes to purchase up to 550,000 Class I shares at a price of $18.40 per share, which represents an approximately 25% discount to HLEND's net asset value (\"NAV\") per share of $24.53 as of May 31, 2026 (the published NAV at the time of the offer).",
+   "The Class I shares subject to the Cox Capital Offer represent approximately 0.1% of HLEND's outstanding shares as of May 31, 2026.",
+   "NAV per share as of June 30, 2026 Class I Common Shares $ 24.42"
+  ]
+ },
+ "BCRED_8K_20260930": {
+  "source": "BCRED Form 8-K filed 2026-09-30",
+  "cox_price": 20.65,
+  "discount_pct_stated": 12.5,
+  "evidence": [
+   "Board Recommendation to Reject an Unsolicited Tender Offer by Cox BCRED recently became aware of an unsolicited tender offer (the \"Cox Capital Offer\") by Cox Capital Retail Secondaries Fund I, LP and its affiliates (collectively, \"Cox Capital\") to purchase BCRED Class I shares at a purchase price of $20.65 per share, a 12.5% discount to BCRED's published Class I NAV"
+  ]
+ },
+ "BCRED_SCTOIA_20260302": {
+  "source": "BCRED SC TO-I/A filed 2026-03-02",
+  "cap_upsized_pct": 7,
+  "subscriptions_q1_bn": 2.0,
+  "employees_invested_mn": 150,
+  "firm_invested_mn": 250,
+  "insider_share_pct": 0.9,
+  "liquidity_dec31_bn": 8,
+  "evidence": [
+   "The Board elected to upsize the offer to 7% of shares, the maximum amount permitted without changing the terms of the repurchase offer.",
+   "BCRED reported over $8 billion of available liquidity as of December 31, 2025, and received nearly $2 billion of new subscriptions in the first quarter.",
+   "In addition to the nearly $2 billion of new subscriptions, Blackstone employees invested approximately $150 million and the firm invested approximately $250 million into an existing BCRED feeder fund, on the same terms as all other investors, representing approximately 0.9% of BCRED's shares outstanding.",
+   "This enabled BCRED to meet 100% of requests for the quarter with certainty and timeliness while further aligning Blackstone and its employees alongside BCRED's shareholders."
+  ]
+ },
+ "BCRED_8K_20260429": {
+  "source": "BCRED Form 8-K filed 2026-04-29",
+  "gross_inflows_q1_bn": 1.9,
+  "evidence": [
+   "Through the noise, the Fund saw decelerating yet solid gross inflows in the quarter of $1.9B.",
+   "Including capital invested by Blackstone and its senior leaders, BCRED was able to meet all repurchase requests for the quarter, further aligning with BCRED's shareholders."
+  ]
+ },
+ "BCRED_8K_20260730": {
+  "source": "BCRED Form 8-K filed 2026-07-30",
+  "repayments_q2_bn": 2.7,
+  "subscriptions_q2_bn": 1.0,
+  "repurchases_accepted_q2_bn": 2.2,
+  "coverage_pct": 165,
+  "evidence": [
+   "The Fund's liquidity position was supported by $2.7B of loan repayments and ~$1B of subscriptions, which together represented 165% of shares accepted for repurchase during the quarter.",
+   "Calculated as $2.7 billion of loan repayments and approximately $1 billion of subscriptions during Q2 2026, divided by approximately $2.2 billion of shares accepted for repurchase during the quarter."
+  ]
+ },
+ "BCRED_8K_20260723": {
+  "source": "BCRED Form 8-K filed 2026-07-23",
+  "available_liquidity_bn": 17,
+  "debt_bn": 35.3,
+  "evidence": [
+   "The Fund had approximately $35.3 billion of debt outstanding (at principal) and approximately $17 billion of available liquidity (cash and amount available to borrow), with an average debt-to-equity leverage ratio during June 2026 of approximately 0.80 times."
+  ]
+ },
+ "OSCF_SCTOIA_20260327": {
+  "source": "OSCF SC TO-I/A filed 2026-03-27",
+  "requests_pct_of_shares": 6.8,
+  "cap_increase_pct": 2.0,
+  "cap_shares_after": 14236410,
+  "sponsor_purchase_pct": 1.7,
+  "evidence": [
+   "The Company estimates that approximately 13.9 million Shares, or 6.8% of the outstanding Shares as of December 31, 2025, were validly tendered and not withdrawn in the Offer.",
+   "To do so, the Company has exercised its ability to purchase up to an additional 2.0% of the Company's outstanding Shares (which increased the number of Shares that may be purchased in the Offer to 14,236,410 Shares) as permitted by Rule 13e-4(f)(1) of the Exchange Act.",
+   "In a show of support for the Fund, Brookfield purchased another 1.7% of shares from an investor (on the same terms as all other investors) to allow OSC to satisfy 100% of tender offer requests this quarter."
+  ]
+ },
+ "ASIF_SCTOIA_20260324": {
+  "source": "ASIF SC TO-I/A filed 2026-03-24",
+  "requests_pct_of_shares_estimate": 11.6,
+  "evidence": [
+   "The Fund estimates that 45,301,737 Shares, or 11.6% of Shares outstanding as of January 31, 2026, were duly tendered to the Fund before the expiration of the Offer at 11:59 p.m., Eastern Time, on March 20, 2026 and not withdrawn.",
+   "The Fund received 11.6% in total repurchase requests. Therefore, all repurchase requests were satisfied on a pro-rata basis of 43.1%",
+   "Therefore, all repurchase requests were satisfied on a pro-rata basis of 43.1%, consistent with the mechanics outlined in the Fund's tender offer filing and prospectus."
+  ],
+  "pro_rata_pct": 43.1
+ },
+ "BCRED_SCTOIA_20260501": {
+  "source": "BCRED SC TO-I/A filed 2026-05-01",
+  "paid_bn": 3.2,
+  "paid_usd": 3232786367,
+  "evidence": [
+   "Pursuant to the promissory notes, the Fund paid on or about April 29, 2026 to the tendering Shareholders a total of $3,232,786,367 representing the net asset value of the total amount of the Shares tendered by Shareholders, less the early repurchase deduction, as applicable."
+  ]
+ },
+ "BCRED_SCTOIA_20260202": {
+  "source": "BCRED SC TO-I/A filed 2026-02-02 (accession 0001213900-26-010557; result of the December-2025 offer)",
+  "paid_usd": 2107504647,
+  "paid_bn": 2.108,
+  "evidence": [
+   "Pursuant to the promissory notes, the Fund paid on or about January 29, 2026 to the tendering Shareholders a total of $2,107,504,647 representing the net asset value of the total amount of the Shares tendered by Shareholders, less the early repurchase deduction, as applicable."
+  ]
+ }
+}

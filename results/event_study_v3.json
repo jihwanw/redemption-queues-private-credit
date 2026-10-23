@@ -1,0 +1,89 @@
+{
+ "meta": {
+  "method": "market model vs SPY, 120-day estimation window ending 10 trading days before the event; log returns from adjusted closes",
+  "built": "2026-10-17"
+ },
+ "events": [
+  {
+   "twin": "ARCC",
+   "sibling": "ASIF",
+   "event_date": "2026-03-24",
+   "alpha": -0.001116,
+   "beta": 0.8215,
+   "sd_resid": 0.01163,
+   "n_est": 120,
+   "car_0_1": {
+    "car_pct": -1.168,
+    "t": -0.71,
+    "n": 2
+   },
+   "car_0_5": {
+    "car_pct": -0.129,
+    "t": -0.05,
+    "n": 6
+   }
+  },
+  {
+   "twin": "OBDC",
+   "sibling": "OCIC/OTIC",
+   "event_date": "2026-04-27",
+   "alpha": -0.000918,
+   "beta": 0.9243,
+   "sd_resid": 0.01443,
+   "n_est": 120,
+   "car_0_1": {
+    "car_pct": 1.271,
+    "t": 0.62,
+    "n": 2
+   },
+   "car_0_5": {
+    "car_pct": 4.621,
+    "t": 1.31,
+    "n": 6
+   }
+  },
+  {
+   "twin": "GBDC",
+   "sibling": "GCRED",
+   "event_date": "2026-05-14",
+   "alpha": -0.000266,
+   "beta": 0.5857,
+   "sd_resid": 0.01256,
+   "n_est": 120,
+   "car_0_1": {
+    "car_pct": 0.072,
+    "t": 0.04,
+    "n": 2
+   },
+   "car_0_5": {
+    "car_pct": -0.794,
+    "t": -0.26,
+    "n": 6
+   }
+  },
+  {
+   "twin": "BXSL",
+   "sibling": "BCRED",
+   "event_date": "2026-06-04",
+   "alpha": -0.001126,
+   "beta": 0.6503,
+   "sd_resid": 0.0137,
+   "n_est": 120,
+   "car_0_1": {
+    "car_pct": 3.004,
+    "t": 1.55,
+    "n": 2
+   },
+   "car_0_5": {
+    "car_pct": 4.827,
+    "t": 1.44,
+    "n": 6
+   }
+  }
+ ],
+ "mean_car_0_1": {
+  "mean_pct": 0.795,
+  "t": 0.85,
+  "n_events": 4
+ }
+}

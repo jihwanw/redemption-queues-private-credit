@@ -1,0 +1,350 @@
+{
+ "n_offers": 66,
+ "funds": [
+  "ASIF",
+  "BCRED",
+  "GCRED",
+  "OCIC",
+  "OSCF",
+  "OTIC"
+ ],
+ "news_counts": {
+  "pre": 56,
+  "post": 8,
+  "straddle": 2
+ },
+ "headroom": {
+  "ASIF": -0.65,
+  "BCRED": 0.46,
+  "GCRED": 3.33,
+  "OCIC": -0.24,
+  "OSCF": 0.76,
+  "OTIC": -10.42
+ },
+ "headroom_definition": "5 minus the request rate (percent of shares) in the fund's last 2025-CYCLE offer (scheduled expiry in 2025); OTIC's is its December-2025 offer, extended to 8 January 2026 and reported on 29 January 2026, before any 2026-cycle window opened",
+ "low_headroom_funds": [
+  "ASIF",
+  "OCIC",
+  "OTIC"
+ ],
+ "headroom_calendar_expiry": {
+  "ASIF": -0.65,
+  "BCRED": 0.46,
+  "GCRED": 3.33,
+  "OCIC": -0.24,
+  "OSCF": 0.76,
+  "OTIC": 2.28
+ },
+ "low_headroom_funds_calendar_expiry": [
+  "ASIF",
+  "BCRED",
+  "OCIC"
+ ],
+ "straddle_note": "both straddling offers (OCIC and OTIC, March 2026) belong to low-headroom funds, so a low-headroom x straddle interaction is perfectly collinear with the straddle dummy and is not estimated; the straddle coefficient in (A) and (B) is the low-headroom straddle effect",
+ "specs": {
+  "A_fundFE": {
+   "formula": "log_t ~ twin_disc + straddle + post + C(fund)",
+   "n": 66,
+   "r2": 0.658,
+   "coef": {
+    "Intercept": {
+     "b": 14.2302,
+     "se_cluster": 0.1978,
+     "t_cluster": 71.92
+    },
+    "twin_disc": {
+     "b": -0.0851,
+     "se_cluster": 0.0223,
+     "t_cluster": -3.81,
+     "wcb_p": 0.0625,
+     "wcb_n_draws": 64,
+     "wcb_p_floor": 0.0312,
+     "p_cluster_t_Gminus1": 0.013
+    },
+    "straddle": {
+     "b": 1.3853,
+     "se_cluster": 0.4182,
+     "t_cluster": 3.31
+    },
+    "post": {
+     "b": 1.9775,
+     "se_cluster": 0.7107,
+     "t_cluster": 2.78,
+     "wcb_p": 0.0312,
+     "wcb_n_draws": 64,
+     "wcb_p_floor": 0.0312,
+     "p_cluster_t_Gminus1": 0.039
+    }
+   }
+  },
+  "B_fundFE_headroom": {
+   "formula": "log_t ~ twin_disc + straddle + post + lowheadroom:post + C(fund)",
+   "n": 66,
+   "r2": 0.663,
+   "coef": {
+    "Intercept": {
+     "b": 14.144,
+     "se_cluster": 0.2146,
+     "t_cluster": 65.9
+    },
+    "twin_disc": {
+     "b": -0.085,
+     "se_cluster": 0.021,
+     "t_cluster": -4.05,
+     "wcb_p": 0.0312,
+     "wcb_n_draws": 64,
+     "wcb_p_floor": 0.0312,
+     "p_cluster_t_Gminus1": 0.01
+    },
+    "straddle": {
+     "b": 1.4373,
+     "se_cluster": 0.4085,
+     "t_cluster": 3.52
+    },
+    "post": {
+     "b": 1.4542,
+     "se_cluster": 0.7795,
+     "t_cluster": 1.87,
+     "wcb_p": 0.0312,
+     "wcb_n_draws": 64,
+     "wcb_p_floor": 0.0312,
+     "p_cluster_t_Gminus1": 0.12
+    },
+    "lowheadroom:post": {
+     "b": 1.0397,
+     "se_cluster": 1.0876,
+     "t_cluster": 0.96,
+     "wcb_p": 0.4688,
+     "wcb_n_draws": 64,
+     "wcb_p_floor": 0.0312,
+     "p_cluster_t_Gminus1": 0.381
+    }
+   }
+  },
+  "C_fund_quarterFE_headroom": {
+   "formula": "log_t ~ twin_disc + lowheadroom:post2026 + C(fund) + C(quarter)",
+   "n": 66,
+   "r2": 0.861,
+   "coef": {
+    "Intercept": {
+     "b": 11.5072,
+     "se_cluster": 1.4663,
+     "t_cluster": 7.85
+    },
+    "twin_disc": {
+     "b": 0.0305,
+     "se_cluster": 0.0645,
+     "t_cluster": 0.47,
+     "wcb_p": 0.9375,
+     "wcb_n_draws": 64,
+     "wcb_p_floor": 0.0312,
+     "p_cluster_t_Gminus1": 0.658
+    },
+    "lowheadroom:post2026": {
+     "b": 1.0567,
+     "se_cluster": 0.6396,
+     "t_cluster": 1.65,
+     "wcb_p": 0.2188,
+     "wcb_n_draws": 64,
+     "wcb_p_floor": 0.0312,
+     "p_cluster_t_Gminus1": 0.16
+    }
+   }
+  },
+  "C_alt_calendar_headroom": {
+   "formula": "log_t ~ twin_disc + lowheadroom_cal:post2026 + C(fund) + C(quarter)",
+   "n": 66,
+   "r2": 0.855,
+   "coef": {
+    "Intercept": {
+     "b": 11.561,
+     "se_cluster": 1.5399,
+     "t_cluster": 7.51
+    },
+    "twin_disc": {
+     "b": 0.0309,
+     "se_cluster": 0.0656,
+     "t_cluster": 0.47,
+     "wcb_p": 0.9375,
+     "wcb_n_draws": 64,
+     "wcb_p_floor": 0.0312,
+     "p_cluster_t_Gminus1": 0.658
+    },
+    "lowheadroom_cal:post2026": {
+     "b": 0.4875,
+     "se_cluster": 0.8047,
+     "t_cluster": 0.61,
+     "wcb_p": 0.6562,
+     "wcb_n_draws": 64,
+     "wcb_p_floor": 0.0312,
+     "p_cluster_t_Gminus1": 0.569
+    }
+   }
+  },
+  "C2_fund_quarterFE_disclosure": {
+   "formula": "log_t ~ twin_disc + lowheadroom:straddle + lowheadroom:post + C(fund) + C(quarter)",
+   "n": 66,
+   "r2": 0.855,
+   "coef": {
+    "Intercept": {
+     "b": 11.5785,
+     "se_cluster": 1.5026,
+     "t_cluster": 7.71
+    },
+    "twin_disc": {
+     "b": 0.031,
+     "se_cluster": 0.0654,
+     "t_cluster": 0.47,
+     "wcb_p": 0.9375,
+     "wcb_n_draws": 64,
+     "wcb_p_floor": 0.0312,
+     "p_cluster_t_Gminus1": 0.658
+    },
+    "lowheadroom:straddle": {
+     "b": 0.3753,
+     "se_cluster": 0.3651,
+     "t_cluster": 1.03,
+     "wcb_p": 0.2812,
+     "wcb_n_draws": 64,
+     "wcb_p_floor": 0.0312,
+     "p_cluster_t_Gminus1": 0.35
+    },
+    "lowheadroom:post": {
+     "b": 0.6669,
+     "se_cluster": 0.7084,
+     "t_cluster": 0.94,
+     "wcb_p": 0.3438,
+     "wcb_n_draws": 64,
+     "wcb_p_floor": 0.0312,
+     "p_cluster_t_Gminus1": 0.39
+    }
+   }
+  },
+  "D_allten_fund_quarterFE_cycle": {
+   "formula": "log_t ~ lowheadroom:post2026 + C(fund) + C(quarter)  [all ten funds, no twin discount]",
+   "n": 109,
+   "r2": 0.888,
+   "coef": {
+    "Intercept": {
+     "b": 13.6832,
+     "se_cluster": 0.7981,
+     "t_cluster": 17.14
+    },
+    "lowheadroom:post2026": {
+     "b": 0.2758,
+     "se_cluster": 0.5,
+     "t_cluster": 0.55,
+     "p_cluster_t_Gminus1": 0.596,
+     "wcb_p": 0.6406,
+     "wcb_n_draws": 1024,
+     "wcb_p_floor": 0.002
+    }
+   }
+  },
+  "D2_allten_fund_quarterFE_disclosure": {
+   "formula": "log_t ~ lowheadroom:straddle + lowheadroom:post + C(fund) + C(quarter)  [all ten funds, no twin discount]",
+   "n": 109,
+   "r2": 0.887,
+   "coef": {
+    "Intercept": {
+     "b": 13.698,
+     "se_cluster": 0.7964,
+     "t_cluster": 17.2
+    },
+    "lowheadroom:straddle": {
+     "b": 0.1678,
+     "se_cluster": 0.3333,
+     "t_cluster": 0.5,
+     "p_cluster_t_Gminus1": 0.629,
+     "wcb_p": 0.6172,
+     "wcb_n_draws": 1024,
+     "wcb_p_floor": 0.002
+    },
+    "lowheadroom:post": {
+     "b": 0.2267,
+     "se_cluster": 0.4862,
+     "t_cluster": 0.47,
+     "p_cluster_t_Gminus1": 0.65,
+     "wcb_p": 0.6309,
+     "wcb_n_draws": 1024,
+     "wcb_p_floor": 0.002
+    }
+   }
+  },
+  "A_fundFE_excl_first_offers": {
+   "formula": "log_t ~ twin_disc + straddle + post + C(fund)  [each fund's first offer dropped]",
+   "n": 60,
+   "r2": 0.733,
+   "coef": {
+    "Intercept": {
+     "b": 15.0097,
+     "se_cluster": 0.0909,
+     "t_cluster": 165.18
+    },
+    "twin_disc": {
+     "b": -0.1067,
+     "se_cluster": 0.0176,
+     "t_cluster": -6.05
+    },
+    "straddle": {
+     "b": 0.8539,
+     "se_cluster": 0.2911,
+     "t_cluster": 2.93
+    },
+    "post": {
+     "b": 1.4142,
+     "se_cluster": 0.3897,
+     "t_cluster": 3.63
+    }
+   }
+  },
+  "A_fundFE_excl_OSCF": {
+   "formula": "log_t ~ twin_disc + straddle + post + C(fund)  [Oaktree pair dropped]",
+   "n": 55,
+   "r2": 0.64,
+   "coef": {
+    "Intercept": {
+     "b": 14.0683,
+     "se_cluster": 0.2055,
+     "t_cluster": 68.47
+    },
+    "twin_disc": {
+     "b": -0.0658,
+     "se_cluster": 0.0275,
+     "t_cluster": -2.39
+    },
+    "straddle": {
+     "b": 1.7431,
+     "se_cluster": 0.4932,
+     "t_cluster": 3.53
+    },
+    "post": {
+     "b": 2.4092,
+     "se_cluster": 0.6681,
+     "t_cluster": 3.61
+    }
+   }
+  }
+ },
+ "headroom_all_ten": {
+  "ADS": 0.15,
+  "ASIF": -0.649,
+  "BCRED": 0.458,
+  "FPCF": 4.031,
+  "GCRED": 3.334,
+  "HLEND": 0.918,
+  "OCIC": -0.243,
+  "OSCF": 0.763,
+  "OTIC": -10.417,
+  "PCAP": 3.883
+ },
+ "low_headroom_funds_all_ten": [
+  "ADS",
+  "ASIF",
+  "BCRED",
+  "OCIC",
+  "OTIC"
+ ],
+ "sample_note": "offers with positive gross requests and a listed-twin discount available at commencement; two zero-tender offers (PCAP December 2023, Golub May 2024) cannot enter a log specification and are excluded",
+ "sample_file": "m2_regression_sample_v3.csv"
+}

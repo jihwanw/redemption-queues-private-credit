@@ -1,0 +1,162 @@
+[
+ [
+  "BCRED_2024-08-02_0001193125-24-192177",
+  "tendered old=17956860.0 new=17956860",
+  "accepted old=2312.0 new=None <-- DIFF"
+ ],
+ [
+  "BCRED_2024-11-01_0001193125-24-249275",
+  "tendered old=21482181.0 new=21482181",
+  "accepted old=2912.0 new=None <-- DIFF"
+ ],
+ [
+  "BCRED_2026-02-02_0001213900-26-010557",
+  "tendered old=85035789.0 new=85035789",
+  "accepted old=32840.0 new=None <-- DIFF"
+ ],
+ [
+  "BCRED_2026-05-01_0001213900-26-050688",
+  "tendered old=133689552.0 new=133689552",
+  "accepted old=10247.0 new=6475958486 <-- DIFF"
+ ],
+ [
+  "OCIC_2024-04-23_0001628280-24-017439",
+  "tendered old=14935589.0 new=26353768 <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "OCIC_2026-04-27_0001628280-26-027580",
+  "tendered old=463820625.0 new=463820625",
+  "accepted old=105851996.0 new=None <-- DIFF"
+ ],
+ [
+  "OCIC_2026-07-24_0001628280-26-049601",
+  "tendered old=395428504.0 new=395428504",
+  "accepted old=105249082.0 new=None <-- DIFF"
+ ],
+ [
+  "ASIF_2024-06-24_0001104659-24-074323",
+  "tendered old=4910.869 new=None <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "ASIF_2026-03-24_0001104659-26-033603",
+  "tendered old=None new=None",
+  "accepted old=None new=549117 <-- DIFF"
+ ],
+ [
+  "ASIF_2026-03-27_0001104659-26-036088",
+  "tendered old=45301737.0 new=45301737",
+  "accepted old=19526058.0 new=None <-- DIFF"
+ ],
+ [
+  "ASIF_2026-04-17_0001104659-26-044917",
+  "tendered old=45344917.0 new=45344917",
+  "accepted old=19544662.0 new=None <-- DIFF"
+ ],
+ [
+  "ASIF_2026-06-25_0001104659-26-077545",
+  "tendered old=None new=None",
+  "accepted old=None new=5230032 <-- DIFF"
+ ],
+ [
+  "ASIF_2026-06-26_0001104659-26-078244",
+  "tendered old=56891917.0 new=56891917",
+  "accepted old=19767079.0 new=None <-- DIFF"
+ ],
+ [
+  "OSCF_2024-11-01_0001193125-24-249906",
+  "tendered old=622438.21 new=622437 <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "OSCF_2025-02-13_0001193125-25-026107",
+  "tendered old=889568.6900000001 new=886281 <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "OSCF_2025-05-12_0001193125-25-117857",
+  "tendered old=927950.48 new=927949 <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "OSCF_2025-11-12_0001193125-25-277757",
+  "tendered old=2642627.79 new=2642626 <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "OSCF_2026-02-17_0001193125-26-055081",
+  "tendered old=8334146.34 new=8333081 <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "OSCF_2026-03-27_0001193125-26-126996",
+  "tendered old=None new=None",
+  "accepted old=14236410.0 new=None <-- DIFF"
+ ],
+ [
+  "OSCF_2026-05-15_0001193125-26-227228",
+  "tendered old=13869407.67 new=13865135 <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "FPCF_2024-01-29_0001193125-24-017818",
+  "tendered old=1071.0 new=None <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "PCAP_2025-02-06_0001628280-25-004221",
+  "tendered old=80978.38 new=80977 <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "PCAP_2025-05-05_0001628280-25-022058",
+  "tendered old=247590.68000000002 new=242123 <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "PCAP_2025-08-06_0001628280-25-038405",
+  "tendered old=215136.06 new=209243 <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "PCAP_2025-08-14_0001911066-25-000015",
+  "tendered old=215234.03 new=209341 <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "PCAP_2025-11-04_0001911066-25-000035",
+  "tendered old=559312.53 new=554189 <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "PCAP_2026-02-05_0001911066-26-000002",
+  "tendered old=575610.75 new=569346 <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "PCAP_2026-05-06_0001911066-26-000061",
+  "tendered old=1752091.5999999999 new=1747142 <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "OTIC_2024-10-24_0001628280-24-043639",
+  "tendered old=6930094.0 new=6927368 <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "OTIC_2026-01-29_0001628280-26-003928",
+  "tendered old=50787512.0 new=425722640 <-- DIFF",
+  "accepted old=None new=None"
+ ],
+ [
+  "OTIC_2026-04-27_0001628280-26-027573",
+  "tendered old=119934135.0 new=119934135",
+  "accepted old=17246881.0 new=None <-- DIFF"
+ ],
+ [
+  "OTIC_2026-07-24_0001628280-26-049599",
+  "tendered old=109888749.0 new=109888749",
+  "accepted old=14438906.0 new=None <-- DIFF"
+ ]
+]

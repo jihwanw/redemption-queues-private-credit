@@ -1,0 +1,33 @@
+\documentclass[12pt]{standalone}
+\usepackage{booktabs,array}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{document}\footnotesize
+\begin{tabular}{p{7.2cm}rrrrr}\toprule
+Specification / regressor & Coefficient & \begin{tabular}[b]{@{}c@{}}(cluster\\SE)\end{tabular} & $t$ & \begin{tabular}[b]{@{}c@{}}WCB\\$p$\end{tabular} & \begin{tabular}[b]{@{}c@{}}$p$\\($t_{G-1}$)\end{tabular} \\ \midrule
+\multicolumn{6}{@{}p{16.2cm}@{}}{\emph{(A) Fund fixed effects} ($N$=66, $R^2$=0.658)} \\
+Listed-twin discount (pp) & -0.085 & (0.022) & -3.81 & 0.063 & 0.013 \\
+Window straddling 24 March 2026 (both are low-headroom funds) & 1.385 & (0.418) & 3.31 &  &  \\
+Window opened after 24 March 2026 & 1.978 & (0.711) & 2.78 & 0.031 & 0.039 \\
+\multicolumn{6}{@{}p{16.2cm}@{}}{\emph{(B) Fund fixed effects + predetermined headroom interactions} ($N$=66, $R^2$=0.663)} \\
+Listed-twin discount (pp) & -0.085 & (0.021) & -4.05 & 0.031 & 0.010 \\
+Window straddling 24 March 2026 (both are low-headroom funds) & 1.437 & (0.409) & 3.52 &  &  \\
+Window opened after 24 March 2026 & 1.454 & (0.780) & 1.87 & 0.031 & 0.120 \\
+Low headroom $\times$ post & 1.040 & (1.088) & 0.96 & 0.469 & 0.381 \\
+\multicolumn{6}{@{}p{16.2cm}@{}}{\emph{(C) Fund and investor-quarter fixed effects} ($N$=66, $R^2$=0.861)} \\
+Listed-twin discount (pp) & 0.031 & (0.065) & 0.47 & 0.938 & 0.658 \\
+Low headroom $\times$ 2026 cycle & 1.057 & (0.640) & 1.65 & 0.219 & 0.160 \\
+\multicolumn{6}{@{}p{16.2cm}@{}}{\emph{(C$^\prime$) As (C), headroom from the last offer that actually expired in 2025} ($N$=66, $R^2$=0.855)} \\
+Listed-twin discount (pp) & 0.031 & (0.066) & 0.47 & 0.938 & 0.658 \\
+Low headroom (calendar-2025 baseline) $\times$ 2026 cycle & 0.488 & (0.805) & 0.61 & 0.656 & 0.569 \\
+\multicolumn{6}{@{}p{16.2cm}@{}}{\emph{(C$^{\prime\prime}$) Fund and investor-quarter fixed effects, headroom interacted with disclosure exposure} ($N$=66, $R^2$=0.855)} \\
+Listed-twin discount (pp) & 0.031 & (0.065) & 0.47 & 0.938 & 0.658 \\
+Low headroom $\times$ post & 0.667 & (0.708) & 0.94 & 0.344 & 0.390 \\
+Window straddling 24 March (OCIC and OTIC, both low headroom; conditional coefficient) & 0.375 & (0.365) & 1.03 & 0.281 & 0.350 \\
+\multicolumn{6}{@{}p{16.2cm}@{}}{\emph{(D) All ten funds, no twin discount: fund and investor-quarter fixed effects, headroom $\times$ 2026 cycle} ($N$=109, $R^2$=0.888)} \\
+Low headroom $\times$ 2026 cycle & 0.276 & (0.500) & 0.55 & 0.641 & 0.596 \\
+\multicolumn{6}{@{}p{16.2cm}@{}}{\emph{(D$^{\prime\prime}$) All ten funds, no twin discount: headroom interacted with disclosure exposure} ($N$=109, $R^2$=0.887)} \\
+Low headroom $\times$ post & 0.227 & (0.486) & 0.47 & 0.631 & 0.650 \\
+Window straddling 24 March (OCIC and OTIC, both low headroom; conditional coefficient) & 0.168 & (0.333) & 0.50 & 0.617 & 0.629 \\
+\bottomrule\end{tabular}
+\end{document}

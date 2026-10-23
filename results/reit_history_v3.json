@@ -1,0 +1,174 @@
+{
+ "meta": {
+  "built": "2026-10-16",
+  "source": "BREIT 424B3/10-Q/10-K 'For the months ended' disclosures (v2 evidence sentences) + 2022-12-15 424B3 for October 2022",
+  "method": "requests %NAV = fulfilled %NAV \u00f7 (fulfilled % of requests / 100). Inputs are disclosed rounded (fulfilled %NAV to 0.1 pp; fulfilled % of requests to 1 pp); the interval uses the half-unit bounds of both inputs."
+ },
+ "monthly": {
+  "2022-10": {
+   "fulfilled_nav_pct": 2.7,
+   "fulfill_of_requests_pct": 100.0,
+   "requests_nav_pct": 2.7,
+   "requests_nav_pct_interval": [
+    2.6500000000000004,
+    2.75
+   ],
+   "evidence": "In October 2022, we fulfilled repurchase requests pursuant to our share repurchase plan of 2.7% of NAV (measured using the NAV of the preceding month), or approximately $1.8 billion, representing all repurchase requests received in that month.",
+   "filing": "424B3 2022-12-15 (accession 0001662972-22-000143)"
+  },
+  "2022-11": {
+   "fulfilled_nav_pct": 2.0,
+   "fulfill_of_requests_pct": 43.0,
+   "requests_nav_pct": 4.651162790697675,
+   "requests_nav_pct_interval": [
+    4.482758620689655,
+    4.823529411764706
+   ],
+   "evidence": "For the months ended November 30, 2022 and December 31, 2022, in accordance with the share repurchase plan, the Company fulfilled repurchases equal to 2.0% and 0.2% of NAV, or 43% and 4% of repurchase requests",
+   "filing": "424B3 2023-03-17"
+  },
+  "2022-12": {
+   "fulfilled_nav_pct": 0.2,
+   "fulfill_of_requests_pct": 4.0,
+   "requests_nav_pct": 5.0,
+   "requests_nav_pct_interval": [
+    3.333333333333334,
+    7.142857142857142
+   ],
+   "evidence": "For the months ended November 30, 2022 and December 31, 2022, in accordance with the share repurchase plan, the Company fulfilled repurchases equal to 2.0% and 0.2% of NAV, or 43% and 4% of repurchase requests",
+   "filing": "424B3 2023-03-17"
+  },
+  "2023-01": {
+   "fulfilled_nav_pct": 2.0,
+   "fulfill_of_requests_pct": 25.0,
+   "requests_nav_pct": 8.0,
+   "requests_nav_pct_interval": [
+    7.647058823529411,
+    8.36734693877551
+   ],
+   "evidence": "For the months ended January 31, 2023, February 28, 2023, and March 31, 2023, in accordance with the share repurchase plan, the Company fulfilled repurchases equal to 2.0 %, 2.0 % and 1.0 % of NAV, or 25 %, 35 % and 15 % of repurchase requests",
+   "filing": "10-Q 2023-05-12"
+  },
+  "2023-02": {
+   "fulfilled_nav_pct": 2.0,
+   "fulfill_of_requests_pct": 35.0,
+   "requests_nav_pct": 5.714285714285714,
+   "requests_nav_pct_interval": [
+    5.492957746478873,
+    5.942028985507246
+   ],
+   "evidence": "For the months ended January 31, 2023, February 28, 2023, and March 31, 2023, in accordance with the share repurchase plan, the Company fulfilled repurchases equal to 2.0 %, 2.0 % and 1.0 % of NAV, or 25 %, 35 % and 15 % of repurchase requests",
+   "filing": "10-Q 2023-05-12"
+  },
+  "2023-03": {
+   "fulfilled_nav_pct": 1.0,
+   "fulfill_of_requests_pct": 15.0,
+   "requests_nav_pct": 6.666666666666667,
+   "requests_nav_pct_interval": [
+    6.129032258064516,
+    7.241379310344828
+   ],
+   "evidence": "For the months ended January 31, 2023, February 28, 2023, and March 31, 2023, in accordance with the share repurchase plan, the Company fulfilled repurchases equal to 2.0 %, 2.0 % and 1.0 % of NAV, or 25 %, 35 % and 15 % of repurchase requests",
+   "filing": "10-Q 2023-05-12"
+  },
+  "2023-04": {
+   "fulfilled_nav_pct": 2.0,
+   "fulfill_of_requests_pct": 29.0,
+   "requests_nav_pct": 6.8965517241379315,
+   "requests_nav_pct_interval": [
+    6.610169491525424,
+    7.192982456140351
+   ],
+   "evidence": "For the months ended April 30, 2023, May 31, 2023, and June 30, 2023, in accordance with the Repurchase Plan, the Company fulfilled repurchases equal to 2.0 %, 2.0 % and 1.0 % of NAV, or 29 %, 30 % and 17 % of repurchase requests",
+   "filing": "10-Q 2023-08-11"
+  },
+  "2023-05": {
+   "fulfilled_nav_pct": 2.0,
+   "fulfill_of_requests_pct": 30.0,
+   "requests_nav_pct": 6.666666666666667,
+   "requests_nav_pct_interval": [
+    6.39344262295082,
+    6.9491525423728815
+   ],
+   "evidence": "For the months ended April 30, 2023, May 31, 2023, and June 30, 2023, in accordance with the Repurchase Plan, the Company fulfilled repurchases equal to 2.0 %, 2.0 % and 1.0 % of NAV, or 29 %, 30 % and 17 % of repurchase requests",
+   "filing": "10-Q 2023-08-11"
+  },
+  "2023-06": {
+   "fulfilled_nav_pct": 1.0,
+   "fulfill_of_requests_pct": 17.0,
+   "requests_nav_pct": 5.88235294117647,
+   "requests_nav_pct_interval": [
+    5.428571428571429,
+    6.363636363636363
+   ],
+   "evidence": "For the months ended April 30, 2023, May 31, 2023, and June 30, 2023, in accordance with the Repurchase Plan, the Company fulfilled repurchases equal to 2.0 %, 2.0 % and 1.0 % of NAV, or 29 %, 30 % and 17 % of repurchase requests",
+   "filing": "10-Q 2023-08-11"
+  },
+  "2023-07": {
+   "fulfilled_nav_pct": 2.0,
+   "fulfill_of_requests_pct": 34.0,
+   "requests_nav_pct": 5.88235294117647,
+   "requests_nav_pct_interval": [
+    5.6521739130434785,
+    6.119402985074626
+   ],
+   "evidence": "For the months ended July 31, 2023, August 31, 2023, and September 30, 2023, in accordance with the Repurchase Plan, the Company fulfilled repurchases equal to 2.0 %, 2.0 % and 1.0 % of NAV, or 34 %, 43 % and 29 % of repurchase requests",
+   "filing": "10-Q 2023-11-13"
+  },
+  "2023-08": {
+   "fulfilled_nav_pct": 2.0,
+   "fulfill_of_requests_pct": 43.0,
+   "requests_nav_pct": 4.651162790697675,
+   "requests_nav_pct_interval": [
+    4.482758620689655,
+    4.823529411764706
+   ],
+   "evidence": "For the months ended July 31, 2023, August 31, 2023, and September 30, 2023, in accordance with the Repurchase Plan, the Company fulfilled repurchases equal to 2.0 %, 2.0 % and 1.0 % of NAV, or 34 %, 43 % and 29 % of repurchase requests",
+   "filing": "10-Q 2023-11-13"
+  },
+  "2023-09": {
+   "fulfilled_nav_pct": 1.0,
+   "fulfill_of_requests_pct": 29.0,
+   "requests_nav_pct": 3.4482758620689657,
+   "requests_nav_pct_interval": [
+    3.2203389830508473,
+    3.68421052631579
+   ],
+   "evidence": "For the months ended July 31, 2023, August 31, 2023, and September 30, 2023, in accordance with the Repurchase Plan, the Company fulfilled repurchases equal to 2.0 %, 2.0 % and 1.0 % of NAV, or 34 %, 43 % and 29 % of repurchase requests",
+   "filing": "10-Q 2023-11-13"
+  },
+  "2023-10": {
+   "fulfilled_nav_pct": 2.0,
+   "fulfill_of_requests_pct": 56.0,
+   "requests_nav_pct": 3.571428571428571,
+   "requests_nav_pct_interval": [
+    3.4513274336283186,
+    3.6936936936936933
+   ],
+   "evidence": "For the months ended October 31, 2023, November 30, 2023, and December 31, 2023, in accordance with the Repurchase Plan, the Company fulfilled repurchases equal to 2.0 %, 2.0 % and 1.0 % of NAV, or 56 %, 67 % and 53 % of repurchase requests",
+   "filing": "10-K 2024-03-28"
+  },
+  "2023-11": {
+   "fulfilled_nav_pct": 2.0,
+   "fulfill_of_requests_pct": 67.0,
+   "requests_nav_pct": 2.9850746268656714,
+   "requests_nav_pct_interval": [
+    2.888888888888889,
+    3.0827067669172927
+   ],
+   "evidence": "For the months ended October 31, 2023, November 30, 2023, and December 31, 2023, in accordance with the Repurchase Plan, the Company fulfilled repurchases equal to 2.0 %, 2.0 % and 1.0 % of NAV, or 56 %, 67 % and 53 % of repurchase requests",
+   "filing": "10-K 2024-03-28"
+  },
+  "2023-12": {
+   "fulfilled_nav_pct": 1.0,
+   "fulfill_of_requests_pct": 53.0,
+   "requests_nav_pct": 1.8867924528301885,
+   "requests_nav_pct_interval": [
+    1.775700934579439,
+    2.0
+   ],
+   "evidence": "For the months ended October 31, 2023, November 30, 2023, and December 31, 2023, in accordance with the Repurchase Plan, the Company fulfilled repurchases equal to 2.0 %, 2.0 % and 1.0 % of NAV, or 56 %, 67 % and 53 % of repurchase requests",
+   "filing": "10-K 2024-03-28"
+  }
+ }
+}

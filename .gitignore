@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+results/soi_raw_v3.json
+results/soi_cache/
+results/filings_cache/

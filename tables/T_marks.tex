@@ -1,0 +1,31 @@
+\documentclass[12pt]{standalone}
+\usepackage{booktabs,array}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{document}\footnotesize
+\begin{tabular}{llrrrrrrrrrr}\toprule
+ & & \multicolumn{3}{c}{Issuer overlap} & \multicolumn{5}{c}{Marks on matched groups (fair value / principal)} & \multicolumn{2}{c}{Non-accrual (\%, FV)} \\ \cmidrule(lr){3-5}\cmidrule(lr){6-10}\cmidrule(lr){11-12}
+Fund--twin & Quarter & \begin{tabular}[b]{@{}c@{}}Common\\issuers\end{tabular} & \begin{tabular}[b]{@{}c@{}}Fund\\(\% of\\debt FV)\end{tabular} & \begin{tabular}[b]{@{}c@{}}Twin\\(\% of\\debt FV)\end{tabular} & \begin{tabular}[b]{@{}c@{}}Matched\\groups\end{tabular} & \begin{tabular}[b]{@{}c@{}}Fund debt\\FV covered\\(\%)\end{tabular} & \begin{tabular}[b]{@{}c@{}}FV-weighted\\mean diff.\\(bp)$^{a}$\end{tabular} & \begin{tabular}[b]{@{}c@{}}Median\\diff.\\(bp)\end{tabular} & \begin{tabular}[b]{@{}c@{}}Within\\10 bp\\(\% of FV)\end{tabular} & Fund & Twin \\ \midrule
+BCRED--BXSL & 2024-12 & 275 & 72 & 98 & 367 & 66 & 2 & 0 & 92 & 0.2$^{d}$ & 0.2$^{d}$ \\
+BCRED--BXSL & 2025-12 & 314 & 73 & 97 & 366 & 67 & 3 & 0 & 93 & 0.4 & 0.5 \\
+BCRED--BXSL & 2026-06 & 313 & 75 & 98 & 372 & 69 & 4 & 0 & 92 & 1.1 & 1.8 \\
+OCIC--OBDC & 2024-12 & 185 & 73 & 82 & 197 & 62 & 0 & 0 & 100 & n.s. & 5 cos.$^{c}$ \\
+OCIC--OBDC & 2025-12 & 196 & 73 & 91 & 224 & 65 & 0 & 0 & 100 & n.s. & 1.1 \\
+OCIC--OBDC & 2026-06 & 212 & 75 & 92 & 210 & 62 & 0 & 0 & 98 & 2 cos.$^{c}$ & 0.8 \\
+OTIC--OBDC & 2024-12 & 79 & 61 & 38 & 85 & 53 & 0 & 0 & 100 & n.s. & 5 cos.$^{c}$ \\
+OTIC--OBDC & 2025-12 & 87 & 59 & 41 & 100 & 53 & 0 & 0 & 100 & 1 co.$^{c}$ & 1.1 \\
+OTIC--OBDC & 2026-06 & 97 & 63 & 43 & 91 & 50 & 0 & 0 & 100 & 2 cos.$^{c}$ & 0.8 \\
+ASIF--ARCC & 2024-12 & 166 & 45 & 29 & 205 & 40 & -11 & 0 & 77 & $<$0.1 & 1.0 \\
+ASIF--ARCC & 2025-12 & 287 & 54 & 52 & 353 & 48 & -5 & 0 & 83 & 0.0 & 1.2 \\
+ASIF--ARCC & 2026-06 & 330 & 66 & 63 & 439 & 61 & 5 & 0 & 85 & 0.2 & 1.4 \\
+GCRED--GBDC & 2024-12 & 172 & 80 & 45 & 225 & 79 & 0 & 0 & 99 & 0.0 & 0.5 \\
+GCRED--GBDC & 2025-12 & 240 & 77 & 57 & 346 & 76 & 0 & 0 & 99 & 0.1 & 0.8 \\
+GCRED--GBDC & 2026-06 & 257 & 84 & 61 & 375 & 83 & -1 & 0 & 93 & 0.1 & 1.9 \\
+OSCF--OCSL & 2024-12 & 26 & 15 & 8 & 26 & 12 & 0 & 0 & 100 & 0.0 & 3.9 \\
+OSCF--OCSL & 2025-12 & 31 & 17 & 6 & 29 & 12 & 0 & 0 & 100 & $<$0.1 & 3.1 \\
+OSCF--OCSL & 2026-06 & 24 & 12 & 6 & 18 & 7 & 0 & 0 & 100 & $<$0.1 & 1.8 \\
+PCAP--NCDL & 2024-12 & 131 & 64 & 62 & 164 & 63 & -6 & 0 & 95 & 0.2 & 0.1 \\
+PCAP--NCDL & 2025-12 & 144 & 66 & 67 & 213 & 65 & -55 & 0 & 88 & 0.0 & 0.5 \\
+PCAP--NCDL & 2026-06 & 176 & 75 & 82 & 282 & 73 & -3 & 0 & 92 & 0.5 & 1.5 \\
+\bottomrule\end{tabular}
+\end{document}

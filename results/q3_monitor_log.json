@@ -1,0 +1,938 @@
+{
+  "checks": [
+    {
+      "at": "2026-07-28T12:43:33.529114",
+      "found_new": false
+    },
+    {
+      "at": "2026-07-29T16:29:21.547321",
+      "found_new": true
+    },
+    {
+      "at": "2026-07-30T15:32:24.459221",
+      "found_new": true
+    },
+    {
+      "at": "2026-07-31T15:32:22.188056",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-01T21:20:24.040733",
+      "found_new": true
+    },
+    {
+      "at": "2026-08-02T21:41:50.134173",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-03T11:23:01.177242",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-04T00:16:03.599125",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-04T10:12:49.388086",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-04T18:57:38.620752",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-06T14:42:45.467437",
+      "found_new": true
+    },
+    {
+      "at": "2026-08-06T15:33:00.174837",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-07T10:32:50.023141",
+      "found_new": true
+    },
+    {
+      "at": "2026-08-07T13:01:59.578963",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-07T18:33:26.945579",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-07T23:26:06.851437",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-08T09:30:12.260467",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-08T18:30:12.884377",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-09T09:35:21.469924",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-09T18:35:58.936026",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-10T09:30:13.672707",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-10T10:35:56.506735",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-10T18:30:14.160753",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-11T10:04:00.165479",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-11T17:12:27.148898",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-11T18:30:11.661832",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-12T00:28:46.928244",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-12T09:13:49.561313",
+      "found_new": true
+    },
+    {
+      "at": "2026-08-12T09:30:19.099400",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-12T19:02:01.907143",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-13T09:47:22.392630",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-13T10:13:23.654867",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-13T19:45:30.891644",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-14T09:30:18.711938",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-14T09:31:49.044791",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-14T18:51:40.406701",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-15T00:50:16.697731",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-15T09:30:15.238626",
+      "found_new": true
+    },
+    {
+      "at": "2026-08-15T18:30:08.499345",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-16T09:30:17.196053",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-16T18:30:12.436558",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-17T09:30:14.051468",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-17T18:30:11.632323",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-18T09:33:53.678110",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-18T18:30:17.933109",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-19T09:52:47.982560",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-19T18:30:17.671890",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-20T10:06:21.569659",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-20T18:42:28.987091",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-21T09:30:11.493713",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-21T18:51:53.733618",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-22T09:30:10.029330",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-22T18:30:11.096381",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-23T09:30:12.454450",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-23T18:30:12.064891",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-24T09:30:13.209789",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-24T18:30:11.642433",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-25T09:30:50.852503",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-25T18:30:12.025933",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-26T09:46:03.869715",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-26T18:49:39.927612",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-27T09:36:09.365047",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-27T18:40:48.701678",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-28T10:20:57.272484",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-28T18:54:27.366754",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-29T09:30:13.138990",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-29T18:30:12.026542",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-30T09:30:12.190512",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-30T18:30:12.192975",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-31T09:30:11.462180",
+      "found_new": false
+    },
+    {
+      "at": "2026-08-31T18:30:28.629397",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-01T10:04:33.526872",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-01T18:37:43.493493",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-02T10:00:35.756439",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-02T18:52:03.250786",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-03T09:49:31.572169",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-03T19:13:57.663285",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-04T09:30:24.959857",
+      "found_new": true
+    },
+    {
+      "at": "2026-09-04T18:44:01.905441",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-05T09:30:12.742792",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-05T18:30:12.424736",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-06T09:30:12.092249",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-06T20:22:16.911526",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-07T09:30:11.180475",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-07T20:51:15.726514",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-08T09:30:12.230918",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-08T18:31:52.165549",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-09T09:33:00.800063",
+      "found_new": true
+    },
+    {
+      "at": "2026-09-09T19:13:54.841398",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-10T10:19:21.842222",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-10T18:30:19.284244",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-11T09:47:49.031247",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-11T18:30:11.870585",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-12T09:30:12.510680",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-12T18:30:13.607958",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-13T09:30:11.491732",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-13T18:38:22.116048",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-14T09:54:51.240236",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-14T18:30:20.039734",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-15T10:05:20.457845",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-15T19:14:59.818684",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-16T09:30:23.556412",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-17T09:34:45.565466",
+      "found_new": true
+    },
+    {
+      "at": "2026-09-17T19:04:03.819500",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-18T10:08:34.417292",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-18T19:03:39.772949",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-19T09:47:08.109990",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-19T19:14:10.121574",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-20T10:09:52.680401",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-20T19:28:24.361240",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-21T09:35:23.216480",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-21T19:01:26.496116",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-22T09:30:12.816886",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-22T18:40:52.597296",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-23T09:30:10.223375",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-23T18:34:20.580358",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-24T09:36:01.267151",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-24T18:30:10.428483",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-25T09:30:15.541914",
+      "found_new": true
+    },
+    {
+      "at": "2026-09-25T18:30:11.985269",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-26T09:30:14.407049",
+      "found_new": true
+    },
+    {
+      "at": "2026-09-26T18:30:10.459441",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-27T09:30:11.484727",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-27T18:43:43.862183",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-28T10:06:12.710271",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-28T20:31:25.967604",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-29T10:15:53.882651",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-29T19:24:39.278652",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-30T11:47:10.209555",
+      "found_new": false
+    },
+    {
+      "at": "2026-09-30T19:07:11.240697",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-01T09:30:12.780765",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-01T18:30:15.447851",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-02T09:30:14.508809",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-02T19:25:48.534903",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-03T09:30:11.233418",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-03T18:30:12.019881",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-04T09:39:30.492467",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-04T19:15:07.336250",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-05T09:30:12.729229",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-05T18:48:52.586373",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-06T10:05:13.612300",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-06T18:55:19.789065",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-07T10:41:24.667892",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-07T18:49:29.320136",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-08T10:00:50.855866",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-09T09:30:11.484568",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-09T18:30:13.458460",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-10T09:30:12.609772",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-10T18:30:11.311835",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-11T09:30:12.454867",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-11T18:30:12.321992",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-12T10:43:32.197879",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-12T18:44:28.846554",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-13T10:11:14.600754",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-13T19:14:41.872585",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-14T09:35:54.424990",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-14T18:30:20.410015",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-15T09:54:51.404047",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-15T18:30:18.291287",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-16T09:31:51.568982",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-16T19:37:59.281477",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-17T09:30:12.680635",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-17T19:01:02.978580",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-18T09:30:12.267498",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-18T18:37:12.288176",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-19T09:30:20.350683",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-19T18:30:19.730225",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-20T09:44:51.211012",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-20T19:13:52.561716",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-21T09:50:11.107933",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-21T18:39:45.039021",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-22T09:30:14.780543",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-22T18:45:00.631546",
+      "found_new": false
+    },
+    {
+      "at": "2026-10-23T09:30:19.324147",
+      "found_new": false
+    }
+  ],
+  "new_filings": [
+    {
+      "fund": "ASIF",
+      "date": "2026-07-28",
+      "accession": "0001104659-26-087531",
+      "tendered": 56892248.0,
+      "accepted": 19767194.0,
+      "oversub_ratio": 2.878,
+      "prorated_lang": true,
+      "pct_requested": null,
+      "evidence": [
+        [
+          "tendered",
+          "56,892,248 Shares of the Fund were validly tendered and not withdrawn prior to the expiration of the Offer."
+        ],
+        [
+          "accepted",
+          "The Fund accepted for purchase 19,767,194 Shares on a pro rata basis based on the number of tendered Shares subject to \u201codd lot\u201d priority for holders of fewer than 100 Shares as described in the Offer to Purchase, representing 34.7% of the Shares of the Fund that were validly tendered and not withdr"
+        ]
+      ],
+      "parsed_at": "2026-07-29T16:28:57.281734"
+    },
+    {
+      "fund": "FPCF",
+      "date": "2026-07-29",
+      "accession": "0001193125-26-322526",
+      "tendered": 1552234.0,
+      "accepted": null,
+      "oversub_ratio": null,
+      "prorated_lang": false,
+      "pct_requested": null,
+      "evidence": [
+        [
+          "tendered",
+          "1,552,234 Shares of the Fund were validly tendered and not withdrawn prior to the expiration of the Offer."
+        ]
+      ],
+      "parsed_at": "2026-07-30T15:32:22.548133"
+    },
+    {
+      "fund": "PCAP",
+      "date": "2026-07-31",
+      "accession": "0001911066-26-000093",
+      "tendered": 1400421.28,
+      "accepted": null,
+      "oversub_ratio": null,
+      "prorated_lang": false,
+      "pct_requested": null,
+      "evidence": [
+        [
+          "tendered",
+          "1,213,002.82 Class I Shares, 26,900.80 Class D Shares, and 160,517.66 Class S Shares were validly tendered prior to the expiration of the Offer."
+        ]
+      ],
+      "parsed_at": "2026-08-01T21:20:23.321877"
+    },
+    {
+      "fund": "BCRED",
+      "date": "2026-08-04",
+      "accession": "0001213900-26-084924",
+      "tendered": 191782834.0,
+      "accepted": 93100272.0,
+      "oversub_ratio": 2.06,
+      "prorated_lang": true,
+      "pct_requested": null,
+      "evidence": [
+        [
+          "tendered",
+          "191,782,834 Shares of the Fund were validly tendered and not withdrawn prior to the expiration of the Offer."
+        ],
+        [
+          "accepted",
+          "The Fund accepted for purchase 93,100,272 Shares on a pro rata basis and in accordance with the terms of the Offer, representing 5% of the Shares of the Fund outstanding as of March 31, 2026."
+        ]
+      ],
+      "parsed_at": "2026-08-06T14:42:29.074428"
+    },
+    {
+      "fund": "HLEND",
+      "date": "2026-08-04",
+      "accession": "0001628280-26-052073",
+      "tendered": 66718586.0,
+      "accepted": 25076907.0,
+      "oversub_ratio": 2.661,
+      "prorated_lang": true,
+      "pct_requested": null,
+      "evidence": [
+        [
+          "tendered",
+          "66,718,586 Shares of the Fund were validly tendered and not withdrawn prior to the expiration of the Offer."
+        ],
+        [
+          "accepted",
+          "The Fund accepted for purchase 25,076,907 Shares on a pro rata basis based on the number of tendered Shares, representing 5% of the Shares of the Fund outstanding as of March 31, 2026."
+        ]
+      ],
+      "parsed_at": "2026-08-06T14:42:37.573416"
+    },
+    {
+      "fund": "ADS",
+      "date": "2026-08-06",
+      "accession": "0001193125-26-337966",
+      "tendered": 101541297.0,
+      "accepted": 30224152.0,
+      "oversub_ratio": 3.36,
+      "prorated_lang": true,
+      "pct_requested": null,
+      "evidence": [
+        [
+          "tendered",
+          "101,541,297 Shares of the Fund were validly tendered and not withdrawn prior to the expiration of the Offer."
+        ],
+        [
+          "accepted",
+          "The Fund accepted for purchase 30,224,152 Shares of the Fund on a pro rata basis based on the number of tendered Shares, representing 5% of the Shares of the Fund outstanding as of March 31, 2026."
+        ]
+      ],
+      "parsed_at": "2026-08-07T10:32:41.458910"
+    },
+    {
+      "fund": "GCRED",
+      "date": "2026-08-11",
+      "accession": "0001930087-26-000101",
+      "tendered": 9042171.0,
+      "accepted": null,
+      "oversub_ratio": null,
+      "prorated_lang": false,
+      "pct_requested": null,
+      "evidence": [
+        [
+          "tendered",
+          "9,042,171 Shares of the Fund were validly tendered and not withdrawn prior to the expiration of the Offer."
+        ]
+      ],
+      "parsed_at": "2026-08-12T09:13:46.770286"
+    },
+    {
+      "fund": "OSCF",
+      "date": "2026-08-14",
+      "accession": "0001193125-26-352420",
+      "tendered": 8857121.85,
+      "accepted": null,
+      "oversub_ratio": null,
+      "prorated_lang": false,
+      "pct_requested": null,
+      "evidence": [
+        [
+          "tendered",
+          "1,519,770.91 Class S Shares and 7,337,350.94 Class I Shares of the Fund were validly tendered and not withdrawn prior to the expiration of the Offer."
+        ]
+      ],
+      "parsed_at": "2026-08-15T09:30:12.175346"
+    },
+    {
+      "fund": "BCRED",
+      "date": "2026-09-03",
+      "accession": "0001213900-26-096935",
+      "tendered": null,
+      "accepted": null,
+      "oversub_ratio": null,
+      "prorated_lang": true,
+      "pct_requested": 5.0,
+      "evidence": [
+        [
+          "pct_requested",
+          "5 BCRED will fulfill repurchase requests representing 5% of shares outstanding."
+        ]
+      ],
+      "parsed_at": "2026-09-04T09:30:12.793080"
+    },
+    {
+      "fund": "FPCF",
+      "date": "2026-09-08",
+      "accession": "0001193125-26-384555",
+      "tendered": null,
+      "accepted": null,
+      "oversub_ratio": null,
+      "prorated_lang": false,
+      "pct_requested": 2.5,
+      "evidence": [
+        [
+          "pct_requested",
+          " EX-99.(A)(1)(VI) 2 d109827dex99a1vi.htm EX-99.(A)(1)(VI) EX-99.(a)(1)(vi) Exhibit (a)(1)(vi) FIDELITY PRIVATE CREDIT FUND c/o Fidelity Diversifying Solutions LLC To the Shareholders of Fidelity Private Credit Fund: We are pleased to announce that the Fund is fulfilling all repurchase requests this "
+        ]
+      ],
+      "parsed_at": "2026-09-09T09:32:58.477192"
+    },
+    {
+      "fund": "OSCF",
+      "date": "2026-09-16",
+      "accession": "0001193125-26-392291",
+      "tendered": null,
+      "accepted": null,
+      "oversub_ratio": null,
+      "prorated_lang": false,
+      "pct_requested": null,
+      "evidence": [],
+      "parsed_at": "2026-09-17T09:34:42.244609"
+    },
+    {
+      "fund": "ASIF",
+      "date": "2026-09-24",
+      "accession": "0001104659-26-110205",
+      "tendered": null,
+      "accepted": null,
+      "oversub_ratio": null,
+      "prorated_lang": true,
+      "pct_requested": 5.0,
+      "evidence": [
+        [
+          "pct_requested",
+          "The Fund intends to accept repurchase requests for 5% of Shares outstanding as of July 31, 2026."
+        ]
+      ],
+      "parsed_at": "2026-09-25T09:30:11.502533"
+    },
+    {
+      "fund": "ASIF",
+      "date": "2026-09-25",
+      "accession": "0001104659-26-110962",
+      "tendered": 50400325.0,
+      "accepted": 19264139.0,
+      "oversub_ratio": 2.616,
+      "prorated_lang": true,
+      "pct_requested": null,
+      "evidence": [
+        [
+          "tendered",
+          "50,400,325 Shares of the Fund were validly tendered and not withdrawn prior to the expiration of the Offer."
+        ],
+        [
+          "accepted",
+          "The Fund accepted for purchase 19,264,139 Shares on a pro rata basis based on the number of tendered Shares subject to \u201codd lot\u201d priority for holders of fewer than 100 Shares as described in the Offer to Purchase, representing 38.2% of the Shares of the Fund that were validly tendered and not withdr"
+        ]
+      ],
+      "parsed_at": "2026-09-26T09:30:10.727960"
+    }
+  ]
+}
