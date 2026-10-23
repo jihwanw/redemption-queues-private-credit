@@ -2,7 +2,7 @@
 
 Replication code and results for the manuscript of the same title (single author; submitted to the *Journal of Financial Stability*, October 2026).
 
-**Version DOI:** to be minted by Zenodo for release v3.1-submission · **Concept DOI:** to be minted
+**Version DOI:** https://doi.org/10.5281/zenodo.23584409 · **Concept DOI:** https://doi.org/10.5281/zenodo.23584408
 
 **Releases.** `v3.0-results` is the commit whose code produced every estimate in the manuscript. `v3.1-submission` is the archived snapshot deposited on Zenodo; it differs from `v3.0-results` only in the table generator (`code/make_tables_v3.py`: the definitions table in full form became a multi-page table), the generated definitions tables, this README and `.zenodo.json`. No results-producing script changed between the two tags. Repository: https://github.com/jihwanw/redemption-queues-private-credit.
 
@@ -37,4 +37,4 @@ All inputs are public filings on SEC EDGAR. No proprietary data are used. The re
 
 ## Citation
 
-Woo, J. (2026). Redemption Queues behind Quarterly Gates: Requests, Rationing, and Balance-Sheet Adjustment in Semi-Liquid Private Credit Funds, 2023–2026 — replication code and results (release v3.1-submission). Zenodo. DOI to be minted for this release.
+Woo, J. (2026). Redemption Queues behind Quarterly Gates: Requests, Rationing, and Balance-Sheet Adjustment in Semi-Liquid Private Credit Funds, 2023–2026 — replication code and results (release v3.1-submission). Zenodo. https://doi.org/10.5281/zenodo.23584409
