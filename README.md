@@ -2,7 +2,9 @@
 
 Replication code and results for the manuscript of the same title (single author; submitted to the *Journal of Financial Stability*, October 2026).
 
-**Version DOI:** [to be inserted after the Zenodo release] · **Concept DOI:** [to be inserted]
+**Version DOI:** to be minted by Zenodo for release v3.1-submission · **Concept DOI:** to be minted
+
+**Releases.** `v3.0-results` is the commit whose code produced every estimate in the manuscript. `v3.1-submission` is the archived snapshot deposited on Zenodo; it differs from `v3.0-results` only in the table generator (`code/make_tables_v3.py`: the definitions table in full form became a multi-page table), the generated definitions tables, this README and `.zenodo.json`. No results-producing script changed between the two tags. Repository: https://github.com/jihwanw/redemption-queues-private-credit.
 
 ## What is here
 
@@ -10,7 +12,7 @@ Replication code and results for the manuscript of the same title (single author
 |---|---|
 | `code/` | Every script that produces a result or a table. The offer-level record is built from SEC EDGAR tender-offer filings (`fetch_filings_cache.py`, `fetch_offer_commencements.py`, `build_offer_master.py`); the request analysis and regressions (`m2_analysis_v3.py`, `m2_regressions_v3.py`); the listed twins' discounts and event study (`twin_discounts_v3.py`, `event_study_v3.py`); the XBRL balance-sheet panel (`collect_balance_sheet_xbrl.py`, `balance_sheet_summary_v3.py`); the schedule-of-investments comparison of marks and non-accruals (`soi_asset_side_v3.py`, `soi_asset_side_measures_v3.py`, `soi_nonaccrual_v3.py`); the numerical check of the appendix model (`model_check.py`); the independent re-extraction used for data verification (`reextract_independent.py`); and the generators of every table and prose number (`make_tables_v3.py`, `make_figures_v4.py`). `numeric_audit_v3.py` checks that every number in the manuscript traces to a results file. |
 | `results/` | The JSON files from which every table and number is generated. The raw schedule-of-investments extract (`soi_raw_v3.json`, 190 MB) and the filing caches are not included; `python code/soi_asset_side_v3.py` and `python code/fetch_filings_cache.py` rebuild them from EDGAR. |
-| `tables/` | The generated standalone tables (`T_*.tex`) and the macro file `numbers_v3.tex` that the manuscript reads. |
+| `tables/` | The generated standalone tables (`T_*.tex`), the two definitions tables (`defs_short.tex`, `defs_full.tex`) and the macro file `numbers_v3.tex` that the manuscript reads. |
 | `figures/` | The two figures. |
 | `preregistration/` | `PREREG_Q4_2026.md`, the pre-specified tests for the next tender cycle, frozen on 22 October 2026 (SHA-256 of the content recorded in the file) before any of the relevant filings existed. |
 | `evidence/` | Every non-accrual sentence parsed from the filings, with accession numbers, and the data-verification report of 16 October 2026. |
@@ -35,4 +37,4 @@ All inputs are public filings on SEC EDGAR. No proprietary data are used. The re
 
 ## Citation
 
-Woo, J. (2026). Redemption Queues behind Quarterly Gates: Requests, Rationing, and Balance-Sheet Adjustment in Semi-Liquid Private Credit Funds, 2023–2026 — replication code and results. Zenodo. DOI to be inserted.
+Woo, J. (2026). Redemption Queues behind Quarterly Gates: Requests, Rationing, and Balance-Sheet Adjustment in Semi-Liquid Private Credit Funds, 2023–2026 — replication code and results (release v3.1-submission). Zenodo. DOI to be minted for this release.

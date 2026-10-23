@@ -178,6 +178,63 @@ for o in done:
 nums["BCREDPaidMarch"] = f"{FF['BCRED_SCTOIA_20260501']['paid_usd']/1e9:.1f}"
 na = [x["net_assets"] for x in BS if x["quarter_end"] == "2026-06-30"]; nums["TotalNetAssets"] = r(sum(na) / 1e9, 0); nums["TotalNetAssetsN"] = str(len(na))
 
+
+# ---- Definitions (one row list -> short form in Section 3.2, full form in Appendix C; same numbering and order) -----------------
+DEFS = [
+ ("D1", "Gross requests ($T$)", "Shares ``validly tendered and not withdrawn prior to the expiration of the Offer'', summed across share classes.",
+  "Shares a holder asked the fund to repurchase in one quarterly tender offer; the quantity the run theories call redemption requests. Operationally the number of shares ``validly tendered and not withdrawn prior to the expiration of the Offer'' reported in the final SC TO-I/A result filing, summed across share classes where listed separately.",
+  "Result filing (SC TO-I/A), Rule 13e-4; Section~\\ref{sec:definitions}", "Tables~\\ref{tab:sample}, \\ref{tab:gates}, \\ref{tab:transitions}; equations~(\\ref{eq:decomp})--(\\ref{eq:specC})"),
+ ("D2", "Accepted shares ($A$)", "Shares ``accepted for purchase''; $A=T$ when the filing states that all tendered shares were purchased.",
+  "Shares the fund repurchased in the offer. Operationally the number ``accepted for purchase'' in the result filing; set equal to $T$ when the filing states that the fund accepted ``100\\% of the Shares'' or purchased ``all validly tendered'' shares or paid the net asset value of all shares tendered.",
+  "Result filing (SC TO-I/A); Section~\\ref{sec:definitions}", "Tables~\\ref{tab:gates}, \\ref{tab:transitions}; equation~(\\ref{eq:decomp})"),
+ ("D3", "Rationed offer", "An offer with $A<T$; its oversubscription is $T/A$.",
+  "An offer in which the fund repurchased fewer shares than were tendered and allocated pro rata. Operationally $A<T$ in the result filing (author rule); oversubscription $T/A$. Offers enlarged above the original cap and then filled in full are not rationed.",
+  "Author rule on D1--D2", "Tables~\\ref{tab:gates}, \\ref{tab:transitions}, \\ref{tab:h3}"),
+ ("D4", "Request rate", "$T$ divided by the fund's own denominator: cap in shares $\\div$ cap in percent (Blue Owl exceptions stated).",
+  "Requests as a share of the shares eligible for the cap. Operationally $T$ divided by the share count the fund used to set its cap (cap in shares $\\div$ cap in percent, from the offer's own filing); for Blue Owl's 2023--25 offers the dollar cap $\\div$ the net offering price in the same document $\\div$ 5\\%; for Blue Owl's 2026 offers the percentage stated in the result filing (OTIC March 2026: shares outstanding net of the January tender).",
+  "Offer and result filings; author rule, Section~\\ref{sec:definitions}", "Tables~\\ref{tab:sample}, \\ref{tab:gates}; Figure~\\ref{fig:requests}"),
+ ("D5", "Unfilled shares ($U_n$)", "$T_n-A_n$: the shares tendered in window $n$ that the fund did not repurchase.",
+  "The part of a window's requests that lapsed unfilled and may be re-tendered. Operationally $U_n=T_n-A_n$ from the result filing (equation~\\ref{eq:decomp}).",
+  "D1--D2; equation~(\\ref{eq:decomp})", "Table~\\ref{tab:transitions}; Section~\\ref{sec:stockflow}"),
+ ("D6", "Lower bound on requests not carried forward ($L_{n+1}$; ``the floor'')", "$\\max\\{0,\\,T_{n+1}-U_n\\}$: the fewest shares in window $n+1$ that cannot be resubmissions of window $n$'s unfilled shares.",
+  "A bound, not an estimate, on the requests in window $n+1$ that were not carried from window $n$. Operationally $L_{n+1}=\\max\\{0,T_{n+1}-U_n\\}$ (equation~\\ref{eq:decomp}); valid for any resubmission rate; a bound on first-time requests only if no unfilled request from an earlier window re-enters after skipping one; it does not bound over-requesting.",
+  "Author-developed; equation~(\\ref{eq:decomp}); Appendix~\\ref{app:model}, equation~(\\ref{eq:stockflow})", "Table~\\ref{tab:transitions}; Sections~\\ref{sec:stockflow}, \\ref{sec:policy}"),
+ ("D7", "Resubmission ceiling share", "$\\min\\{1,\\,U_n/T_{n+1}\\}$: the largest share of window $n+1$'s requests that resubmission alone could account for.",
+  "The upper bound on resubmissions in a later window, as a share of that window's gross requests. Operationally $\\min\\{1,U_n/T_{n+1}\\}$ from D1, D2 (author rule).",
+  "Author-developed; Section~\\ref{sec:definitions}", "Table~\\ref{tab:transitions}; Section~\\ref{sec:stockflow}"),
+ ("D8", "Cycle (scheduled-expiry) dating", "An offer belongs to the quarter of its scheduled expiry; the one extended offer keeps its original cycle.",
+  "The convention that places each offer in time by when requests had to be in. Operationally the quarter of the scheduled expiry date in the offer document; Blue Owl Technology Income's offer scheduled for 31 December 2025 and extended to 8 January 2026 is a 2025-cycle offer.",
+  "Author rule; Section~\\ref{sec:design}", "All tables dated by window; Figure~\\ref{fig:requests}"),
+ ("D9", "Exposure to the first proration disclosure", "Straddle: a window open on 24 March 2026; Post: a window opened after it.",
+  "Whether investors deciding in a window could know that a fund had rationed. Operationally, relative to Ares's amendment of 24 March 2026 (the first public proration): Straddle = window open on that date; Post = window opened after it; the 2026-cycle indicator approximates exposure dated from the first above-cap disclosure (\\FirstAboveCapDate).",
+  "Author rule; Section~\\ref{sec:design}; equations~(\\ref{eq:specA})--(\\ref{eq:specC})", "Table~\\ref{tab:regressions}"),
+ ("D10", "Headroom; low headroom", "5\\% cap less the fund's request rate in its last 2025-cycle offer; low = below the median across funds.",
+  "A predetermined proxy for how close a fund already was to its cap before 2026. Operationally the five-percent cap minus the request rate (D4) of the fund's last 2025-cycle offer; the low-headroom group is below the median; it proxies expected rationing exposure and does not measure beliefs.",
+  "Author-developed; Section~\\ref{sec:horserace}", "Table~\\ref{tab:regressions}; equation~(\\ref{eq:specC})"),
+ ("D11", "Listed-twin discount", "Twin's closing price on the first trading day on or after its 10-Q/10-K filing date, over the NAV per share in that filing, minus one (percent).",
+  "The market's valuation of an exchange-listed claim on largely the same loans relative to the sponsor's mark. Operationally price (first close on or after the filing date) $\\div$ NAV per share (US-GAAP \\texttt{NetAssetValuePerShare}, period end) $-1$, in percent; the value known at an offer's commencement is the latest filing before the window opened.",
+  "XBRL companyfacts (SEC); Yahoo Finance closes; Section~\\ref{sec:data}", "Table~\\ref{tab:discounts}; Figure~\\ref{fig:twins}; equation~(\\ref{eq:specA})"),
+ ("D12", "Matched group and mark", "Lines of two vehicles with the same issuer, spread, rate, lien seniority and facility type; mark $=$ fair value $\\div$ tagged principal (equation~\\ref{eq:mark}).",
+  "The unit on which a non-traded fund's and its listed twin's valuations of the same loans are compared. Operationally the pooled schedule-of-investments lines of one vehicle sharing issuer key, spread, interest rate, lien seniority and facility type (dollar-denominated only); mark $m_g=\\sum\\mathrm{FV}/\\sum\\mathrm{Prin}$; difference in basis points of principal, weighted by the fund's fair value.",
+  "Inline-XBRL schedules of investments (US-GAAP \\texttt{InvestmentOwned*} elements); author rule, Appendix~\\ref{app:soi}", "Table~\\ref{tab:marks}; Tables~\\ref{tab:marks_quarterly}, \\ref{tab:marks_largest}; equation~(\\ref{eq:mark})"),
+ ("D13", "Non-accrual share", "The filer's own statement of investments on non-accrual as a percent of its portfolio at fair value (basis as stated).",
+  "The share of a vehicle's investments on which it has stopped accruing income. Operationally the figure the filing itself states, on the filer's own denominator and basis (fair value preferred; cost or a count where that is all the filing gives), bound to the report date by the nearest ``as of'' clause.",
+  "10-Q/10-K text; Appendix~\\ref{app:soi}", "Table~\\ref{tab:marks}; Section~\\ref{sec:marks}"),
+ ("D14", "Balance-sheet flows relative to net assets", "Quarterly cash-flow items (repurchases paid, issuance, purchases and dispositions of investments) de-cumulated from year-to-date XBRL facts, divided by net assets.",
+  "What the fund paid out, took in and invested in a quarter, scaled by its size. Operationally US-GAAP cash-flow elements (e.g.\\ \\texttt{PaymentsForRepurchaseOfCommonStock}, \\texttt{PaymentsToAcquireInvestments}) from 10-Q/10-K XBRL, quarterly values as differences of year-to-date amounts, divided by net assets; dispositions and repayments are reported together by the filers.",
+  "XBRL companyfacts (SEC); Section~\\ref{sec:data}", "Table~\\ref{tab:balance}; Section~\\ref{sec:balance}"),
+]
+_short = ["\\begin{tabular}{p{0.7cm}p{4.1cm}p{7.4cm}p{3.6cm}}\\toprule", "No. & Term & Definition & Applied in \\\\ \\midrule"]
+_full = ["\\begin{longtable}{p{0.7cm}p{3.2cm}p{7.8cm}p{3.0cm}p{2.3cm}}", "\\caption{Definitions of the measures used in this paper (full form)}\\label{tab:defs_full}\\\\", "\\toprule No. & Term & Conceptual and operational definition & Source & Applied in \\\\ \\midrule \\endfirsthead",
+         "\\multicolumn{5}{l}{\\footnotesize Table~\\thetable\\ (continued)}\\\\ \\toprule No. & Term & Conceptual and operational definition & Source & Applied in \\\\ \\midrule \\endhead",
+         "\\midrule\\multicolumn{5}{r}{\\footnotesize continued on next page}\\\\ \\endfoot", "\\bottomrule \\endlastfoot"]
+for d in DEFS:
+    _short.append(f"{d[0]} & {d[1]} & {d[2]} & {d[5]} \\\\ \\addlinespace[1pt]")
+    _full.append(f"{d[0]} & {d[1]} & {d[3]} & {d[4]} & {d[5]} \\\\ \\addlinespace[2pt]")
+_short.append("\\bottomrule\\end{tabular}"); _full.append("\\end{longtable}")
+(OUT / "defs_short.tex").write_text("\n".join(_short) + "\n"); (OUT / "defs_full.tex").write_text("\n".join(_full) + "\n")
+nums["NDefs"] = str(len(DEFS))
+
 # ---- Asset-side measures from the schedules of investments (referee item 3b): results/soi_asset_side_v3.json, results/nonaccrual_v3.json
 SOI = J("soi_asset_side_v3.json")["pairs"]; NA = J("nonaccrual_v3.json")["entities"]
 MAIN_PAIRS = ["BCRED-BXSL", "OCIC-OBDC", "OTIC-OBDC", "ASIF-ARCC", "GCRED-GBDC", "OSCF-OCSL", "PCAP-NCDL"]   # ADS-MFIC omitted: Apollo's identifiers are not reliably parseable across the two vehicles
